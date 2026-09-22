@@ -1,11 +1,9 @@
 name: Utility / Compatibility Matrix Update
 
 on:
-  schedule:
-    # Runs at 00:00 UTC every day
-    - cron: '0 0 * * *'
-
-  workflow_dispatch: # can be run manually
+  # Scheduled execution disabled in this fork because the inherited workflow
+  # depends on upstream-only GitHub/AWS permissions. Manual runs remain available.
+  workflow_dispatch:
 
 jobs:
   vouch:
