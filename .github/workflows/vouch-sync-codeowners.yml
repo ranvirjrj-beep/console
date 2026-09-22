@@ -2,8 +2,8 @@
 name: Vouch - Sync CODEOWNERS
 
 on:
-  schedule:
-    - cron: "0 0 * * 1" # Every Monday at midnight UTC
+  # Scheduled execution disabled in this fork because it requires access to
+  # upstream pluralsh organization teams. Manual runs remain available.
   workflow_dispatch:
 
 concurrency:
